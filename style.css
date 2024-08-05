@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.attribution {
+      font-size: 11px;
+      text-align: center;
+}
+
+.attribution a {
+      color: hsl(228, 45%, 44%);
+}
+
+
+
+
+
+body {
+      font-family: "Poppins", sans-serif;
+      background-color: hsl(257, 40%, 49%);
+      background-image: url(images/bg-mobile.svg);
+      background-repeat: no-repeat;
+      background-position: center top;
+      background-size: 100%;
+      min-height: 100vh;
+}
+
+.container {
+      width: 80%;
+      max-width: 1200px;
+      margin: 0 auto;
+}
+
+
+.header {
+      padding: 3em 0;
+}
+
+.header__logo img {
+      width: 150px;
+}
+
+.main {
+      padding: 1.5em 0;
+      text-align: center;
+      color: white;
+      line-height: 1.5;
+}
+
+.main__img-img {
+      width: 100%;
+}
+
+.main__text{
+     padding: 2.5em 0;
+}
+
+.main__header{
+      font-weight: 600;
+}
+
+.main__desc {
+      font-family: "Open Sans", sans-serif;
+      font-optical-sizing: auto;
+      font-variation-settings: "wdth" 100;
+      margin-bottom: 2em;
+}
+
+.main__btn{
+      text-decoration: none;
+      color: hsl(257, 40%, 49%);
+      background-color: #fff;
+      padding: .5em 3em;
+      border-radius: 2em;
+      display: inline-block;
+      box-shadow: 0px 2px 3px  black;
+      margin-bottom: 3em;
+      transition: .25s;
+}
+
+.main__btn:hover{
+      background-color: hsl(300, 69%, 71%);
+      color: white;
+}
+
+.main__social{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1em;
+      margin: 0 auto;
+}
+
+.main__logo{
+      width: 20px;
+      fill: white;
+      transition: .25s;
+      border: 1px solid white;
+      border-radius: 50%;
+      padding: .5em;
+}
+
+
+.main__logo:hover{
+      fill: hsl(300, 69%, 71%);
+}
+
+
+@media (min-width:768px){
+
+      body{
+            background-image: url(images/bg-desktop.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+      }
+      .main .container{
+            display: flex;
+            justify-content: space-between;
+            text-align: initial;
+            position: relative;
+      }
+
+      .main__social{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+      }
+
+      .main__img{
+            width: 55%;
+      }
+      .main__text{
+            width: 40%;
+      }
+
+      .main__header{
+            margin-top: 0;
+      }
+}
